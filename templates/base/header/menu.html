@@ -1,0 +1,574 @@
+{% load static%}
+<div class="container">
+
+                <!--Brand Logo-->
+                <a class="navbar-brand" href="index-map-leaflet-fullscreen.html">
+                    <img src="{% static 'assets/img/logo.png' %}" alt="">
+                </a>
+
+                <!--Responsive Collapse Button-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrimary" aria-controls="navbarPrimary" aria-expanded="false" aria-label="Переключение навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Collapsing Navigation-->
+                <div class="collapse navbar-collapse" id="navbarPrimary">
+
+                    <!--LEFT NAVIGATION MAIN LEVEL
+                    =================================================================================================-->
+                    <ul class="navbar-nav">
+
+                        <!--HOME (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item ts-has-child">
+
+                            <!--Main level link-->
+                            <a class="nav-link active" href="#"><ya-tr-span data-index="7-0" data-value="
+ Home
+ " data-translation="
+ Главная
+ " data-type="trSpan">
+ Главная
+ </ya-tr-span><span class="sr-only"><ya-tr-span data-index="7-1" data-value="(current)" data-translation="(текущий)" data-type="trSpan">(текущий)</ya-tr-span></span>
+                            </a>
+
+                            <!-- List (1st level) -->
+                            <ul class="ts-child">
+
+                                <!-- MAP (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item ts-has-child">
+
+                                    <a href="#" class="nav-link"><ya-tr-span data-index="8-0" data-value="Map" data-translation="Карта" data-type="trSpan">Карта</ya-tr-span></a>
+
+                                    <!--List (2nd level) -->
+                                    <ul class="ts-child">
+
+                                        <!-- OPENSTREETMAP (2nd level level)
+                                        =============================================================================-->
+                                        <li class="nav-item ts-has-child">
+
+                                            <a href="#" class="nav-link"><ya-tr-span data-index="9-0" data-value="OpenStreetMap" data-translation="OpenStreetMap" data-type="trSpan">OpenStreetMap</ya-tr-span></a>
+
+                                            <!--List (3rd level) -->
+                                            <ul class="ts-child">
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-leaflet-fullscreen.html" class="nav-link"><ya-tr-span data-index="10-0" data-value="Full Screen" data-translation="полноэкранный режим" data-type="trSpan">полноэкранный режим</ya-tr-span></a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-leaflet-form-bottom.html" class="nav-link"><ya-tr-span data-index="11-0" data-value="Form Bottom" data-translation="Форма Снизу" data-type="trSpan">Форма Снизу</ya-tr-span></a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-leaflet-half-map.html" class="nav-link"><ya-tr-span data-index="12-0" data-value="Half Map" data-translation="Половина карты" data-type="trSpan">Половина карты</ya-tr-span></a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-leaflet-left-results.html" class="nav-link"><ya-tr-span data-index="13-0" data-value="Left Results" data-translation="Левые Результаты" data-type="trSpan">Левые Результаты</ya-tr-span></a>
+                                                </li>
+
+                                            </ul>
+
+                                        </li>
+                                        <!--end OpenStreetMap-->
+
+                                        <!-- MAPBOX (2nd level level)
+                                        =============================================================================-->
+                                        <li class="nav-item ts-has-child">
+
+                                            <a href="#" class="nav-link"><ya-tr-span data-index="14-0" data-value="MapBox" data-translation="Картографический ящик" data-type="trSpan">Картографический ящик</ya-tr-span></a>
+
+                                            <!--List (3rd level) -->
+                                            <ul class="ts-child">
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-mapbox-fullscreen.html" class="nav-link"><ya-tr-span data-index="15-0" data-value="Full Screen" data-translation="полноэкранный режим" data-type="trSpan">полноэкранный режим</ya-tr-span></a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-mapbox-form-bottom.html" class="nav-link"><ya-tr-span data-index="16-0" data-value="Form Bottom" data-translation="Форма Снизу" data-type="trSpan">Форма Снизу</ya-tr-span></a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-mapbox-half-map.html" class="nav-link"><ya-tr-span data-index="17-0" data-value="Half Map" data-translation="Половина Карты" data-type="trSpan">Половина Карты</ya-tr-span></a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-mapbox-left-results.html" class="nav-link"><ya-tr-span data-index="18-0" data-value="Left Results" data-translation="Левые результаты" data-type="trSpan">Левые результаты</ya-tr-span></a>
+                                                </li>
+
+                                            </ul>
+
+                                        </li>
+                                        <!--end MapBox-->
+
+                                        <!-- GOOGLE (2nd level level)
+                                        =============================================================================-->
+                                        <li class="nav-item ts-has-child">
+
+                                            <a href="#" class="nav-link"><ya-tr-span data-index="19-0" data-value="Google" data-translation="Google" data-type="trSpan">Google</ya-tr-span></a>
+
+                                            <!--List (3rd level) -->
+                                            <ul class="ts-child">
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-google-fullscreen.html" class="nav-link"><ya-tr-span data-index="20-0" data-value="Full Screen" data-translation="полноэкранный режим" data-type="trSpan">полноэкранный режим</ya-tr-span></a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-google-form-bottom.html" class="nav-link"><ya-tr-span data-index="21-0" data-value="Form Bottom" data-translation="Дно формы" data-type="trSpan">Дно формы</ya-tr-span></a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-google-half-map.html" class="nav-link"><ya-tr-span data-index="22-0" data-value="Half Map" data-translation="Половина Карты" data-type="trSpan">Половина Карты</ya-tr-span></a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-google-left-results.html" class="nav-link"><ya-tr-span data-index="23-0" data-value="Left Results" data-translation="Левые результаты" data-type="trSpan">Левые результаты</ya-tr-span></a>
+                                                </li>
+
+                                            </ul>
+
+                                        </li>
+                                        <!--end Google-->
+
+                                        <!-- HERE (2nd level level)
+                                        =============================================================================-->
+                                        <li class="nav-item ts-has-child">
+
+                                            <a href="#" class="nav-link"><ya-tr-span data-index="24-0" data-value="Here" data-translation="Здесь" data-type="trSpan">Здесь</ya-tr-span></a>
+
+                                            <!--List (3rd level) -->
+                                            <ul class="ts-child">
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-here-fullscreen.html" class="nav-link"><ya-tr-span data-index="25-0" data-value="Full Screen" data-translation="полноэкранный режим" data-type="trSpan">полноэкранный режим</ya-tr-span></a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-here-form-bottom.html" class="nav-link"><ya-tr-span data-index="26-0" data-value="Form Bottom" data-translation="Дно формы" data-type="trSpan">Дно формы</ya-tr-span></a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-here-half-map.html" class="nav-link"><ya-tr-span data-index="27-0" data-value="Half Map" data-translation="Половина Карты" data-type="trSpan">Половина Карты</ya-tr-span></a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-here-left-results.html" class="nav-link"><ya-tr-span data-index="28-0" data-value="Left Results" data-translation="Левые результаты" data-type="trSpan">Левые результаты</ya-tr-span></a>
+                                                </li>
+
+                                            </ul>
+
+                                        </li>
+                                        <!--end Here-->
+
+                                        <!-- BING (2nd level level)
+                                        =============================================================================-->
+                                        <li class="nav-item ts-has-child">
+
+                                            <a href="#" class="nav-link"><ya-tr-span data-index="29-0" data-value="Bing" data-translation="Бинг" data-type="trSpan">Бинг</ya-tr-span></a>
+
+                                            <!--List (3rd level) -->
+                                            <ul class="ts-child">
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-bing-fullscreen.html" class="nav-link"><ya-tr-span data-index="30-0" data-value="Full Screen" data-translation="полноэкранный режим" data-type="trSpan">полноэкранный режим</ya-tr-span></a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-bing-form-bottom.html" class="nav-link"><ya-tr-span data-index="31-0" data-value="Form Bottom" data-translation="Дно формы" data-type="trSpan">Дно формы</ya-tr-span></a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-bing-half-map.html" class="nav-link"><ya-tr-span data-index="32-0" data-value="Half Map" data-translation="Половина Карты" data-type="trSpan">Половина Карты</ya-tr-span></a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-bing-left-results.html" class="nav-link"><ya-tr-span data-index="33-0" data-value="Left Results" data-translation="Левые результаты" data-type="trSpan">Левые результаты</ya-tr-span></a>
+                                                </li>
+
+                                            </ul>
+
+                                        </li>
+                                        <!--end Bing-->
+
+                                    </ul>
+                                    <!--end List (2nd level)-->
+
+                                </li>
+                                <!--end MAP (1st level)-->
+
+                                <!-- SLIDER (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item ts-has-child">
+
+                                    <a href="#" class="nav-link"><ya-tr-span data-index="34-0" data-value="Slider" data-translation="Ползунок" data-type="trSpan">Ползунок</ya-tr-span></a>
+
+                                    <!--List (2nd level) -->
+                                    <ul class="ts-child">
+
+                                        <li class="nav-item">
+                                            <a href="index-slider.html" class="nav-link"><ya-tr-span data-index="35-0" data-value="Slider Default" data-translation="Слайдер по умолчанию" data-type="trSpan">Слайдер по умолчанию</ya-tr-span></a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="index-slider-fullscreen.html" class="nav-link"><ya-tr-span data-index="36-0" data-value="Full Screen" data-translation="полноэкранный режим" data-type="trSpan">полноэкранный режим</ya-tr-span></a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="index-slider-form-vertical.html" class="nav-link"><ya-tr-span data-index="37-0" data-value="Vertical Form" data-translation="Вертикальная Форма" data-type="trSpan">Вертикальная Форма</ya-tr-span></a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="index-slider-form-horizontal.html" class="nav-link"><ya-tr-span data-index="38-0" data-value="Horizontal Form" data-translation="Горизонтальная Форма" data-type="trSpan">Горизонтальная Форма</ya-tr-span></a>
+                                        </li>
+
+                                    </ul>
+                                    <!--end List (2nd level) -->
+
+                                </li>
+                                <!--end SLIDER (1st level)-->
+
+                                <!-- IMAGE (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item ts-has-child">
+
+                                    <a href="#" class="nav-link"><ya-tr-span data-index="39-0" data-value="Image" data-translation="Изображение" data-type="trSpan">Изображение</ya-tr-span></a>
+
+                                    <!--List (2nd level) -->
+                                    <ul class="ts-child">
+
+                                        <li class="nav-item">
+                                            <a href="index-image-form-horizontal-dark.html" class="nav-link"><ya-tr-span data-index="40-0" data-value="Horizontal Form" data-translation="Горизонтальная Форма" data-type="trSpan">Горизонтальная Форма</ya-tr-span></a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="index-image-form-vertical-light.html" class="nav-link"><ya-tr-span data-index="41-0" data-value="Vertical Form" data-translation="Вертикальная Форма" data-type="trSpan">Вертикальная Форма</ya-tr-span></a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="index-image-fullscreen.html" class="nav-link"><ya-tr-span data-index="42-0" data-value="Full Screen" data-translation="полноэкранный режим" data-type="trSpan">полноэкранный режим</ya-tr-span></a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="index-video-background.html" class="nav-link"><ya-tr-span data-index="43-0" data-value="Video Background" data-translation="Видео Фон" data-type="trSpan">Видео Фон</ya-tr-span></a>
+                                        </li>
+
+                                    </ul>
+                                    <!--end List (2nd level) -->
+
+                                </li>
+                                <!--end SLIDER (1st level)-->
+
+                            </ul>
+                            <!--end List (1st level) -->
+
+                        </li>
+                        <!--end HOME nav-item-->
+
+                        <!--LISTING (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item ts-has-child">
+
+                            <!--Main level link-->
+                            <a class="nav-link" href="#"><ya-tr-span data-index="44-0" data-value="Listing" data-translation="Перечисление" data-type="trSpan">Перечисление</ya-tr-span></a>
+
+                            <!-- List (1st level) -->
+                            <ul class="ts-child">
+
+                                <!-- CATEGORY ICONS (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item">
+
+                                    <a href="listing-category-icons.html" class="nav-link"><ya-tr-span data-index="45-0" data-value="Category Icons" data-translation="Значки категорий" data-type="trSpan">Значки категорий</ya-tr-span></a>
+
+                                </li>
+                                <!--end CATEGORY ICONS (1st level)-->
+
+                                <!-- GRID (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item ts-has-child">
+
+                                    <a href="#" class="nav-link"><ya-tr-span data-index="46-0" data-value="Grid" data-translation="Сетка" data-type="trSpan">Сетка</ya-tr-span></a>
+
+                                    <!--List (2nd level) -->
+                                    <ul class="ts-child">
+
+                                        <li class="nav-item">
+                                            <a href="listing-grid-3-columns.html" class="nav-link"><ya-tr-span data-index="47-0" data-value="Grid 3 Columns" data-translation="Таблица 3 Столбцы" data-type="trSpan">Таблица 3 Столбцы</ya-tr-span></a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="listing-grid-4-columns.html" class="nav-link"><ya-tr-span data-index="48-0" data-value="Grid 4 Columns" data-translation="Таблица 4 Столбцы" data-type="trSpan">Таблица 4 Столбцы</ya-tr-span></a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="listing-grid-mixed.html" class="nav-link"><ya-tr-span data-index="49-0" data-value="Mixed" data-translation="Смешанный" data-type="trSpan">Смешанный</ya-tr-span></a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="listing-grid-sidebar-left.html" class="nav-link"><ya-tr-span data-index="50-0" data-value="Sidebar Left" data-translation="Боковая панель Слева" data-type="trSpan">Боковая панель Слева</ya-tr-span></a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="listing-grid-sidebar-right.html" class="nav-link"><ya-tr-span data-index="51-0" data-value="Sidebar Right" data-translation="Боковая панель Справа" data-type="trSpan">Боковая панель Справа</ya-tr-span></a>
+                                        </li>
+
+                                    </ul>
+                                    <!--end List (2nd level) -->
+
+                                </li>
+                                <!--end GRID (1st level)-->
+
+                                <!-- LIST (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item ts-has-child">
+
+                                    <a href="#" class="nav-link"><ya-tr-span data-index="52-0" data-value="List" data-translation="Список" data-type="trSpan">Список</ya-tr-span></a>
+
+                                    <!--List (2nd level) -->
+                                    <ul class="ts-child">
+
+                                        <li class="nav-item">
+                                            <a href="listing-list-sidebar-left.html" class="nav-link"><ya-tr-span data-index="53-0" data-value="Sidebar Left" data-translation="Боковая панель Слева" data-type="trSpan">Боковая панель Слева</ya-tr-span></a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="listing-list-sidebar-right.html" class="nav-link"><ya-tr-span data-index="54-0" data-value="Sidebar Right" data-translation="Боковая панель Справа" data-type="trSpan">Боковая панель Справа</ya-tr-span></a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="listing-list-compact-sidebar.html" class="nav-link"><ya-tr-span data-index="55-0" data-value="Compact with Sidebar" data-translation="Компактный с боковой панелью" data-type="trSpan">Компактный с боковой панелью</ya-tr-span></a>
+                                        </li>
+
+                                    </ul>
+                                    <!--end List (2nd level) -->
+
+                                </li>
+                                <!--end LIST (1st level)-->
+
+                                <!-- PROPERTY (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item ts-has-child">
+
+                                    <a href="#" class="nav-link"><ya-tr-span data-index="56-0" data-value="Property" data-translation="Собственность" data-type="trSpan">Собственность</ya-tr-span></a>
+
+                                    <!--List (2nd level) -->
+                                    <ul class="ts-child">
+
+                                        <li class="nav-item">
+                                            <a href="detail-01.html" class="nav-link"><ya-tr-span data-index="57-0" data-value="Property Detail v1" data-translation="Property Detail v1" data-type="trSpan">Property Detail v1</ya-tr-span></a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="detail-02.html" class="nav-link"><ya-tr-span data-index="58-0" data-value="Property Detail v2" data-translation="Property Detail v2" data-type="trSpan">Property Detail v2</ya-tr-span></a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="detail-03.html" class="nav-link"><ya-tr-span data-index="59-0" data-value="Property Detail v3" data-translation="Property Detail v3" data-type="trSpan">Property Detail v3</ya-tr-span></a>
+                                        </li>
+
+                                    </ul>
+                                    <!--end List (2nd level) -->
+
+                                </li>
+                                <!--end PROPERTY (1st level)-->
+
+                            </ul>
+                            <!--end List (1st level) -->
+
+                        </li>
+                        <!--end LISTING nav-item-->
+
+                        <!--PAGES (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item ts-has-child">
+
+                            <!--Main level link-->
+                            <a class="nav-link" href="#"><ya-tr-span data-index="60-0" data-value="Pages" data-translation="Страницы" data-type="trSpan">Страницы</ya-tr-span></a>
+
+                            <!-- List (1st level) -->
+                            <ul class="ts-child">
+
+                                <!-- AGENCY (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item ts-has-child">
+
+                                    <a href="#" class="nav-link"><ya-tr-span data-index="61-0" data-value="Agency" data-translation="Агентство" data-type="trSpan">Агентство</ya-tr-span></a>
+
+                                    <!--List (2nd level) -->
+                                    <ul class="ts-child">
+
+                                        <li class="nav-item">
+                                            <a href="agencies-list.html" class="nav-link"><ya-tr-span data-index="62-0" data-value="Agencies List" data-translation="Список агентств" data-type="trSpan">Список агентств</ya-tr-span></a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="agency-detail.html" class="nav-link"><ya-tr-span data-index="63-0" data-value="Agency Detail" data-translation="Детали Агентства" data-type="trSpan">Детали Агентства</ya-tr-span></a>
+                                        </li>
+
+                                    </ul>
+                                    <!--end List (2nd level) -->
+
+                                </li>
+                                <!--end AGENCY (1st level)-->
+
+                                <!-- AGENTS (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item ts-has-child">
+
+                                    <a href="#" class="nav-link"><ya-tr-span data-index="64-0" data-value="Agents" data-translation="Агенты" data-type="trSpan">Агенты</ya-tr-span></a>
+
+                                    <!--List (2nd level) -->
+                                    <ul class="ts-child">
+
+                                        <li class="nav-item">
+                                            <a href="agencies-list.html" class="nav-link"><ya-tr-span data-index="65-0" data-value="Agents List" data-translation="Список агентов" data-type="trSpan">Список агентов</ya-tr-span></a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="agent-detail-01.html" class="nav-link"><ya-tr-span data-index="66-0" data-value="Agent Detail v1" data-translation="Агент Detail v1" data-type="trSpan">Агент Detail v1</ya-tr-span></a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="agent-detail-02.html" class="nav-link"><ya-tr-span data-index="67-0" data-value="Agent Detail v2" data-translation="Агент Detail v2" data-type="trSpan">Агент Detail v2</ya-tr-span></a>
+                                        </li>
+
+                                    </ul>
+                                    <!--end List (2nd level) -->
+
+                                </li>
+                                <!--end LIST (1st level)-->
+
+                                <!-- EDIT PROPERTY (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item">
+                                    <a href="edit-property.html" class="nav-link"><ya-tr-span data-index="68-0" data-value="Edit Property" data-translation="Изменить Свойство" data-type="trSpan">Изменить Свойство</ya-tr-span></a>
+                                </li>
+                                <!--end EDIT PROPERTY (1st level)-->
+
+                                <!-- FAQ (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item">
+                                    <a href="faq.html" class="nav-link"><ya-tr-span data-index="69-0" data-value="FAQ" data-translation="ВОПРОСЫ И ОТВЕТЫ" data-type="trSpan">ВОПРОСЫ И ОТВЕТЫ</ya-tr-span></a>
+                                </li>
+                                <!--end FAQ (1st level)-->
+
+                                <!-- LOGIN (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item">
+                                    <a href="login.html" class="nav-link"><ya-tr-span data-index="70-0" data-value="Login" data-translation="Вход" data-type="trSpan">Вход</ya-tr-span></a>
+                                </li>
+                                <!--end LOGIN (1st level)-->
+
+                                <!-- PRICING (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item">
+                                    <a href="pricing.html" class="nav-link"><ya-tr-span data-index="71-0" data-value="Pricing" data-translation="Цены" data-type="trSpan">Цены</ya-tr-span></a>
+                                </li>
+                                <!--end PRICING (1st level)-->
+
+                                <!-- REGISTER (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item">
+                                    <a href="register.html" class="nav-link"><ya-tr-span data-index="72-0" data-value="Register" data-translation="Регистрация" data-type="trSpan">Регистрация</ya-tr-span></a>
+                                </li>
+                                <!--end REGISTER (1st level)-->
+
+                                <!-- SUBMIT (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item">
+                                    <a href="submit.html" class="nav-link"><ya-tr-span data-index="73-0" data-value="Submit Property" data-translation="Отправить собственность" data-type="trSpan">Отправить собственность</ya-tr-span></a>
+                                </li>
+                                <!--end SUBMIT (1st level)-->
+
+                                <!-- SUBMIT PREVIEW (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item">
+                                    <a href="preview.html" class="nav-link"><ya-tr-span data-index="74-0" data-value="Submit Preview" data-translation="Отправить предварительный просмотр" data-type="trSpan">Отправить предварительный просмотр</ya-tr-span></a>
+                                </li>
+                                <!--end SUBMIT PREVIEW (1st level)-->
+
+                                <!-- SUBMITTED (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item">
+                                    <a href="submitted.html" class="nav-link"><ya-tr-span data-index="75-0" data-value="Submitted" data-translation="Представленный" data-type="trSpan">Представленный</ya-tr-span></a>
+                                </li>
+                                <!--end SUBMITTED(1st level)-->
+
+                            </ul>
+                            <!--end List (1st level) -->
+
+                        </li>
+                        <!--end PAGES nav-item-->
+
+                        <!--ABOUT US (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html"><ya-tr-span data-index="76-0" data-value="About Us" data-translation="О нас" data-type="trSpan">О нас</ya-tr-span></a>
+                        </li>
+                        <!--end ABOUT US nav-item-->
+
+                        <!--CONTACT (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item">
+                            <a class="nav-link mr-2" href="contact.html"><ya-tr-span data-index="77-0" data-value="Contact" data-translation="Контакты" data-type="trSpan">Контакты</ya-tr-span></a>
+                        </li>
+                        <!--end CONTACT nav-item-->
+
+                    </ul>
+                    <!--end Left navigation main level-->
+
+                    <!--RIGHT NAVIGATION MAIN LEVEL
+                    =================================================================================================-->
+                    <ul class="navbar-nav ml-auto">
+
+
+
+                        <!--LOGIN (Main level)
+
+            {% if not request.user.is_authenticated %}
+
+
+                        =============================================================================================-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'login' %}"><ya-tr-span data-index="78-0" data-value="Login" data-translation="Вход" data-type="trSpan">Вход</ya-tr-span></a>
+                        </li>
+
+                        <!--REGISTER (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="{% url 'registration' %}"><ya-tr-span data-index="79-0" data-value="Register" data-translation="Регистрация" data-type="trSpan">Регистрация</ya-tr-span></a>
+                        {% else %}
+              <li class="nav-item">
+                  <span class="navbar-text text-light">Здравствуйте, {% if request.user.is_authenticated %}<span class="badge badge-danger"><a href="#" style="text-decoration: none; font-size: 14px;">{{ request.user.username }}</a></span>{% else %} гоcть!{% endif %}<a href="{% url 'logout' %}">| Выйти</a></span>
+              </li>
+
+
+                        </li>
+          {% endif %}
+
+
+
+                        <!--SUBMIT (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary btn-sm m-1 px-3" href="submit.html">
+                                <i class="fa fa-plus small mr-2"></i><ya-tr-span data-index="80-0" data-value="
+ Add Property
+ " data-translation="
+ Добавить свойство
+ " data-type="trSpan">
+ Добавить свойство
+ </ya-tr-span></a>
+                        </li>
+
+                    </ul>
+
+                    <!--end Right navigation-->
+
+                </div>
+                <!--end navbar-collapse-->
+            </div>

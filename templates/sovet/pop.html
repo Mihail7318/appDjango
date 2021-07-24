@@ -1,0 +1,11 @@
+
+{% load static%}
+<div>
+ {% for popsov in popsov %}
+
+    <p>{{ popsov.title }}</p>
+    <p>{{ popsov.content }}</p>
+    <p>{{ popsov.content }}</p>
+    <a href="#" class="nubex">{{ popsov.slug }}</a>
+ {% endfor %}
+</div>

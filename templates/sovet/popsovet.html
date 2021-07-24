@@ -1,0 +1,104 @@
+{% extends 'base/base.html' %}
+{% load static%}
+{% load mptt_tags %}
+
+        {% block body %}
+        <!--================Categories Banner Area =================-->
+        <section class="solid_banner_area">
+            <div class="container">
+                <div class="solid_banner_inner">
+                    <h3></h3>
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--================End Categories Banner Area =================-->
+
+
+
+<!--================Categories Product Area =================-->
+        <section class="categories_product_main p_80">
+            <div class="container">
+                <div class="categories_main_inner">
+                    <div class="row row_disable">
+                        <div class="col-lg-9 float-md-right">
+
+							<div class="c_product_grid_details">
+                                {% for postpop in postpops %}
+                                <div class="c_product_item">
+                                    <div class="row">
+                                            <div class="c_product_text">
+                                                <h3><a href="{{ postpop.get_absolute_url }}">{{ postpop.title }}</a></h3>
+                                                        {{ postpop.content|truncatewords_html:20|safe }}
+                                                <h6><a href="{{ postpop.get_absolute_url }}"><span>Далее</span></a></h6>
+                                                        <br><br>
+                                                <div class="blog-info float-left">
+                                                    <span class="author-name">
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <a href="{{ postpop.category.get_absolute_url }}"> {{ postpop.category }}</a>
+                                                    </span>
+                                                    <span class="categories">
+                                                        <i class="fa fa-tag"></i>
+                                                        {% if postpop.tags.exists %}
+                                                            {% for tag in postpop.tags.all %}
+                                                            <a href="{{ tag.get_absolute_url }}">{{ tag.name }}</a>
+                                                            {% endfor %}
+                                                        {% endif %}
+
+                                                    </span>
+                                                    <span class="comments-number">
+                                                        <i class="fa fa-comment"></i>
+                                                        <a href="#">0 Comment</a>
+                                                    </span>
+                                                </div>
+                                                    <div class="float-right"> <h6> Дата: <span> {{ postpop.created_at|date:"j F Y" }}</span></h6> </div>
+                                            </div>
+
+                                    </div>
+                                </div>
+                                 {% endfor %}
+		<!--================Paginations Product Area =================-->
+                                {% if page_obj.has_other_pages %}
+
+                                <nav aria-label="Page navigation example" class="pagination_area">
+                                  <ul class="pagination">
+
+                                      {% for p in page_obj.paginator.page_range %}
+                                        {% if page_obj.number == p %}
+                                            <li class="page-item"><a class="page-link" href="?page={{ p }}">{{ p }}</a></li>
+                                        {% elif p > page_obj.number|add:-3 and p < page_obj.number|add:3 %}
+                                            <li class="page-item"><a class="page-link" href="?page={{ p }}">{{ p }}</a></li>
+                                        {% endif %}
+                                      {% endfor %}
+
+                                      {% if page_obj.has_next %}
+                                        <li class="page-item next"><a class="page-link" href="?page={{ page_obj.next_page_number }}"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                                      {% endif %}
+                                  </ul>
+                                </nav>
+                                {% endif %}
+		<!--================Paginations Product Area =================-->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 float-md-right">
+                            <div class="categories_sidebar">
+                                <aside class="l_widgest l_p_categories_widget">
+
+
+
+
+
+
+                                </aside>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Categories Product Area =================-->
+        {% endblock %}

@@ -1,0 +1,64 @@
+{% load static%}
+{% load i18n %}
+<!doctype html>
+<html lang="en">
+{% include 'base/header/head.html' %}
+
+<body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<!-- WRAPPER ==============================================================================-->
+<div class="ts-page-wrapper ts-homepage" id="page-top">
+    <!--*********************************************************************************************************-->
+    <header id="ts-header" class="fixed-top" style = "display: contents;">
+        <!-- SECONDARY NAVIGATION
+        =============================================================================================================-->
+        <nav id="ts-secondary-navigation" class="navbar p-0">
+            <div class="container justify-content-end justify-content-sm-between">
+                <!--left Side-->
+                    {% include 'base/header/top-left.html' %}
+                <!--Right Side-->
+                    {% include 'base/header/top-right.html' %}
+            </div>
+            <!--end container-->
+        </nav>
+        <nav id="ts-primary-navigation" class="navbar navbar-expand-md navbar-light">
+
+                    {% include 'base/header/menu.html' %}
+                <!--Right Side-->
+
+
+
+        </nav>
+    </header>
+
+    <!--end Header-->
+<!--=================== block body ====================-->
+
+    {% block body %}
+
+    {% endblock %}
+<!--==================== Footer =======================-->
+{% block Footer %}
+<footer id="ts-footer">
+        <section id="ts-footer-main">
+            <div class="container">
+                <div class="row">
+                        <!--widget-1-->
+                    {% include 'base/footer/widget-1.html' %}
+                        <!--widget-2-->
+                    {% include 'base/footer/widget-2.html' %}
+                        <!--widget-3-->
+                    {% include 'base/footer/widget-3.html' %}
+                </div>
+            </div>
+        </section>
+                <!--copyright-->
+        {% include 'base/footer/copyright.html' %}
+    </footer>
+
+{% endblock %}
+{% include 'base/footer/footer-script.html' %}
+
+
+    </body>
+</html>

@@ -1,0 +1,19 @@
+{% extends 'base/base.html' %}
+{% load static%}
+
+        {% block body %}
+        <!-- section -->
+    <h3>{{ title }}</h3>
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+                {{ standartpages.useragreement|safe }}
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /section -->
+        {% endblock %}

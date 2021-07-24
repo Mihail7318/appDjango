@@ -1,0 +1,28 @@
+{% extends 'base/base.html' %}
+{% load static%}
+{% load mptt_tags %}
+
+
+
+
+{% block body %}
+    <div id="accordion">
+     {% for fed in feds %}
+      <div class="card">
+        <div class="card-header" id="heading{{ fed.id }}">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse{{ fed.id }}" aria-expanded="false" aria-controls="collapse{{ fed.id }}">
+                {{ fed.title }}
+            </button>
+          </h5>
+        </div>
+        <div id="collapse{{ fed.id }}" class="collapse" aria-labelledby="heading{{ fed.id }}" data-parent="#accordion">
+          <div class="card-body">
+            {{ fed.slug }}
+          </div>
+        </div>
+
+      </div>
+     {% endfor %}
+    </div>
+{% endblock %}

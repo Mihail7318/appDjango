@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+{% load static%}
+{% load mptt_tags %}
+
+{% block body %}
+
+
+<p class="editContent">Форма обратной связи</p>
+<form action="{% url 'contact' %}" method="post"  enctype="multipart/form-data" class="w3layouts-newsletter">
+    {% csrf_token %}
+    {%  for a in form %}
+        {{ a }}<br>
+    {% endfor %}
+    <input type = "submit" value ="Отправить">
+
+</form>
+
+{% endblock %}

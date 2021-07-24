@@ -1,0 +1,263 @@
+{% extends 'base/base.html' %}
+{% load static%}
+
+{% block body %}
+
+<section id="content">
+            <div class="container">
+                <div class="row flex-wrap-reverse">
+
+
+                    <div class="col-md-5 col-lg-4">
+
+
+
+
+
+                        <section class="contact-the-agent">
+                            <h3><ya-tr-span data-index="98-0" data-value="Contact the Agent" data-translation="Свяжитесь с Агентом" data-type="trSpan">Личный кабинет</ya-tr-span></h3>
+
+                            <div class="ts-box">
+
+                                <!--Agent Image & Phone-->
+                                <div class="ts-center__vertical mb-4">
+
+                                    <!--Image-->
+                                    <a href="agent-detail-01.html" class="ts-circle p-5 mr-4 ts-shadow__sm" data-bg-image="assets/img/img-person-05.jpg" style="background-image: url(&quot;assets/img/img-person-05.jpg&quot;);"></a>
+
+                                    <!--Phone contact-->
+                                    <figure class="mb-0">
+                                        <h5 class="mb-0"><ya-tr-span data-index="110-0" data-value="Jane Brown" data-translation="Джейн Браун" data-type="trSpan">Джейн Браун</ya-tr-span></h5>
+                                        <p class="mb-0">
+                                            <i class="fa fa-phone-square ts-opacity__50 mr-2"></i>
+                                            +1 602-862-1673
+                                        </p>
+                                    </figure>
+                                </div>
+
+                                <!--Agent contact form-->
+                                <form id="form-agent" class="ts-form">
+
+                                    <!--Name-->
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="ваше имя">
+                                    </div>
+
+                                    <!--Email-->
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Ваша электронная почта">
+                                    </div>
+
+                                    <!--Message-->
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="form-contact-message" rows="3" name="message" placeholder="Привет, я хочу иметь больше информации о property #156461"></textarea>
+                                    </div>
+
+                                    <!--Submit button-->
+                                    <div class="form-group clearfix mb-0">
+                                        <button type="submit" class="btn btn-primary float-right" id="form-contact-submit"><ya-tr-span data-index="111-0" data-value="Send a Message
+ " data-translation="Отправить сообщение
+ " data-type="trSpan">Отправить сообщение
+ </ya-tr-span></button>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </section>
+
+
+                        <section id="actions">
+
+                            <div class="d-flex justify-content-between">
+
+                                <a href="#" class="btn btn-light mr-2 w-100" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to favorites">
+                                    <i class="far fa-star"></i>
+                                </a>
+
+                                <a href="#" class="btn btn-light mr-2 w-100" data-toggle="tooltip" data-placement="top" title="" data-original-title="Настройки">
+                                    <i class="fa fa-cog"></i>
+                                </a>
+
+                                <a href="#" class="btn btn-light mr-2 w-100" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to compare">
+                                    <i class="fa fa-exchange-alt"></i>
+                                </a>
+
+                                <a href="#" class="btn btn-light w-100" data-toggle="tooltip" data-placement="top" title="" data-original-title="Share property">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+
+                            </div>
+
+                        </section>
+
+                    </div><div class="col-sm-8 col-lg-8">
+
+                        <hr class="mb-5">
+
+                        <h3><ya-tr-span data-index="122-0" data-value="Similar Properties" data-translation="Похожие Свойства" data-type="trSpan">Похожие Свойства</ya-tr-span></h3>
+
+                        <!--Item-->
+                        <div class="card ts-item ts-item__list ts-card">
+
+                            <!--Ribbon-->
+                            <div class="ts-ribbon">
+                                <i class="fa fa-thumbs-up"></i>
+                            </div>
+
+                            <!--Card Image-->
+                            <a href="detail-01.html" class="card-img" data-bg-image="assets/img/img-item-thumb-01.jpg" style="background-image: url(&quot;assets/img/img-item-thumb-01.jpg&quot;);"></a>
+
+                            <!--Card Body-->
+                            <div class="card-body">
+
+                                <figure class="ts-item__info">
+                                    <h4><ya-tr-span data-index="123-0" data-value="Big Luxury Apartment" data-translation="Большая Роскошная Квартира" data-type="trSpan" data-selected="true">Большая Роскошная Квартира</ya-tr-span></h4>
+                                    <aside>
+                                        <i class="fa fa-map-marker mr-2"></i><ya-tr-span data-index="124-0" data-value="
+ 1350 Arbutus Drive
+ " data-translation="
+ 1350 Арбутус Драйв
+ " data-type="trSpan">
+ 1350 Арбутус Драйв
+ </ya-tr-span></aside>
+                                </figure>
+
+                                <div class="ts-item__info-badge">
+                                    $350,000
+                                </div>
+
+                                <div class="ts-description-lists">
+                                    <dl>
+                                        <dt><ya-tr-span data-index="125-0" data-value="Area" data-translation="Область" data-type="trSpan">Область</ya-tr-span></dt>
+                                        <dd><ya-tr-span data-index="126-0" data-value="325m" data-translation="325м" data-type="trSpan">325м</ya-tr-span><sup><ya-tr-span data-index="126-0" data-value="2" data-translation="2" data-type="trSpan">2</ya-tr-span></sup></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><ya-tr-span data-index="127-0" data-value="Bedrooms" data-translation="Спальни" data-type="trSpan">Спальни</ya-tr-span></dt>
+                                        <dd>2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><ya-tr-span data-index="128-0" data-value="Bathrooms" data-translation="Ванные комнаты" data-type="trSpan">Ванные комнаты</ya-tr-span></dt>
+                                        <dd>1</dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <!--Card Footer-->
+                            <a href="detail-01.html" class="card-footer">
+                                <span class="ts-btn-arrow"><ya-tr-span data-index="129-0" data-value="Detail" data-translation="Деталь" data-type="trSpan">Деталь</ya-tr-span></span>
+                            </a>
+
+                        </div>
+
+                        <!--Item-->
+                        <div class="card ts-item ts-item__list ts-card">
+
+                            <!--Ribbon-->
+                            <div class="ts-ribbon-corner">
+                                <span><ya-tr-span data-index="130-0" data-value="Updated" data-translation="Обновленный" data-type="trSpan">Обновленный</ya-tr-span></span>
+                            </div>
+
+                            <!--Card Image-->
+                            <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-02.jpg" style="background-image: url(&quot;assets/img/img-item-thumb-02.jpg&quot;);"></a>
+
+                            <!--Card Body-->
+                            <div class="card-body ts-item__body">
+
+                                <figure class="ts-item__info">
+                                    <h4><ya-tr-span data-index="131-0" data-value="Cozy Design Studio" data-translation="Уютная Дизайн-Студия" data-type="trSpan">Уютная Дизайн-Студия</ya-tr-span></h4>
+                                    <aside>
+                                        <i class="fa fa-map-marker mr-2"></i><ya-tr-span data-index="132-0" data-value="
+ 4831 Worthington Drive
+ " data-translation="
+ 4831 Уортингтон Драйв
+ " data-type="trSpan">
+ 4831 Уортингтон Драйв
+ </ya-tr-span></aside>
+                                </figure>
+
+                                <div class="ts-item__info-badge">$125,000</div>
+
+                                <div class="ts-description-lists">
+                                    <dl>
+                                        <dt><ya-tr-span data-index="133-0" data-value="Area" data-translation="Область" data-type="trSpan">Область</ya-tr-span></dt>
+                                        <dd><ya-tr-span data-index="134-0" data-value="325m" data-translation="325м" data-type="trSpan">325м</ya-tr-span><sup><ya-tr-span data-index="134-0" data-value="2" data-translation="2" data-type="trSpan">2</ya-tr-span></sup></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><ya-tr-span data-index="135-0" data-value="Bedrooms" data-translation="Спальни" data-type="trSpan">Спальни</ya-tr-span></dt>
+                                        <dd>2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><ya-tr-span data-index="136-0" data-value="Bathrooms" data-translation="Ванные комнаты" data-type="trSpan">Ванные комнаты</ya-tr-span></dt>
+                                        <dd>1</dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <!--Card Footer-->
+                            <a href="detail-01.html" class="card-footer ts-item__footer">
+                                <span class="ts-btn-arrow"><ya-tr-span data-index="137-0" data-value="Detail" data-translation="Деталь" data-type="trSpan">Деталь</ya-tr-span></span>
+                            </a>
+
+                        </div>
+
+                        <!--Item-->
+                        <div class="card ts-item ts-item__list ts-card">
+
+                            <!--Card Image-->
+                            <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-03.jpg" style="background-image: url(&quot;assets/img/img-item-thumb-03.jpg&quot;);"></a>
+
+                            <!--Card Body-->
+                            <div class="card-body ts-item__body">
+
+                                <figure class="ts-item__info">
+                                    <h4><ya-tr-span data-index="138-0" data-value="Family Villa" data-translation="Семейная вилла" data-type="trSpan">Семейная вилла</ya-tr-span></h4>
+                                    <aside>
+                                        <i class="fa fa-map-marker mr-2"></i><ya-tr-span data-index="139-0" data-value="
+ 4127 Winding Way
+ " data-translation="
+ 4127 Извилистый Путь
+ " data-type="trSpan">
+ 4127 Извилистый Путь
+ </ya-tr-span></aside>
+                                </figure>
+
+                                <div class="ts-item__info-badge">$45,900</div>
+
+                                <div class="ts-description-lists">
+                                    <dl>
+                                        <dt><ya-tr-span data-index="140-0" data-value="Area" data-translation="Область" data-type="trSpan">Область</ya-tr-span></dt>
+                                        <dd><ya-tr-span data-index="141-0" data-value="325m" data-translation="325м" data-type="trSpan">325м</ya-tr-span><sup><ya-tr-span data-index="141-0" data-value="2" data-translation="2" data-type="trSpan">2</ya-tr-span></sup></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><ya-tr-span data-index="142-0" data-value="Bedrooms" data-translation="Спальни" data-type="trSpan">Спальни</ya-tr-span></dt>
+                                        <dd>2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><ya-tr-span data-index="143-0" data-value="Bathrooms" data-translation="Ванные комнаты" data-type="trSpan">Ванные комнаты</ya-tr-span></dt>
+                                        <dd>1</dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <!--Card Footer-->
+                            <a href="detail-01.html" class="card-footer ts-item__footer">
+                                <span class="ts-btn-arrow"><ya-tr-span data-index="144-0" data-value="Detail" data-translation="Деталь" data-type="trSpan">Деталь</ya-tr-span></span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+{% endblock %}
