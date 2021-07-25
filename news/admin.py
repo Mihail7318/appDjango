@@ -7,7 +7,7 @@ from modeltranslation.admin import TranslationAdmin
 
 
 from .models import *
-
+'''
 class PostAdminForm(forms.ModelForm):
     """Форма с виджетом ckeditor"""
     content_ru = forms.CharField(label="Описание", widget=CKEditorUploadingWidget())
@@ -16,6 +16,8 @@ class PostAdminForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = '__all__'
+
+
 
 
 
@@ -31,6 +33,9 @@ class PostAdmin(TranslationAdmin):
     form = PostAdminForm
     save_as = True
     save_on_top = True
+
+'''
+
 
 
 @admin.register(Category)
@@ -70,4 +75,9 @@ class TagAdmin(TranslationAdmin):
 
     get_image.short_description = 'минеатюра'
 
+
+
 admin.site.register(Comment)
+
+admin.site.register(Post)
+admin.site.register(Complain)

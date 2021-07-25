@@ -1,6 +1,8 @@
 {% extends 'base/base.html' %}
 {% load static%}
 {% load static i18n %}
+{% load comments_tree %}
+{% load crispy_forms_tags %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -58,7 +60,6 @@
                                             </ul>
                                     </div>
 
-                                </div>
                             </section>
         <!--================End Categories Banner Area =================-->
 
@@ -76,6 +77,7 @@
                                 <div class="c_product_item">
                                     <div class="row">
                                             <div class="c_product_text">
+                                                <h5 id="ddd">{{ post.slug }}</h5>
                                                  <h3>{{ post.title }}</h3>
                                                         {{ post.content|safe }}
 
@@ -83,8 +85,20 @@
                                             </div>
 
                                     </div>
+                                    <hr>
+                                    <ul>
+                                    {{ comm|comments_filter}}
+                                    </ul>
+                                        <form action="{% url 'comment_create' %}" method="POST">
+                {% csrf_token %}
+                <textarea name="text" cols="40" rows="10" class="textarea" required="" id="id_text"></textarea>
+                <input type="button" class="btn btn-ptimary" value="Отправить" id="bt">
+            </form>
 
                                 </div>
+
+
+
                                     <span class="categories">
                                         <i class="fa fa-tag"></i>
                                         {% if post.tags.exists %}

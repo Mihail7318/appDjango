@@ -21,6 +21,7 @@ def comments_filter(comments_list):
                   <hr>
                   <p>{text} | id={id}</p>
                   <span href="#" class="reply" data-id="{id}" data-parent={parent_id}>ответить</span>
+                  <span href="#" class="complain" data-id="{id}">Пожаловаться</span>
                   <form action="" method="POST" class="comment-form form-group" id="form-{id}" style="display:none;">
                       <textarea type="text" class="form-control" name="comment-text"></textarea><br>
                       <input type="submit" class="btn btn-primary submit-reply" data-id="{id}" data-submit-reply="{parent_id}" value="отправить">
